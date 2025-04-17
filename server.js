@@ -15,7 +15,7 @@ users = [
     { id: "2", name: "two" }
 ]
 
-app.get("/API/user",() => {
+app.get("/API/user",(req,res) => {
     res.json(users)
 })
 
